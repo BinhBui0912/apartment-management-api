@@ -1,0 +1,55 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: ${SPRING_JPA_HIBERNATE_DDL_AUTO}
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: binhbuii0912@gmail.com
+    password:
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  sql:
+    init:
+      mode: always
+jwt:
+  expiration: 86400000
+  secretKey: r9V!s#M1z&PqA8@eFg3$WkL*Yx6T^oNzU7JhBdCvIq0RmXnEp2ZtKaHb4GyD$wLu
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /v3/api-docs
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+    try-it-out-enabled: true
+    # disable-swagger-default-url: true
+    operationsSorter: method
+    tagsSorter: alpha
+    filter: true
+    # urls:
+    #   - name: "Residents API"
+    #     url: /api/docs/residents
+    #   - name: "Apartments API" 
+    #     url: /api/docs/apartments
+    #   - name: "Monthly Bills API"
+    #     url: /api/docs/monthly-bills
+    #   - name: "Auth API"
+    #     url: /api/docs/auth
