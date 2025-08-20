@@ -23,7 +23,7 @@ A RESTful API for managing apartment complexes, built with **Spring Boot 3** and
 
 2. **Start all services**
    ```bash
-   docker-compose up -d
+   docker-compose up --build
    ```
 
 3. **Access the application**
