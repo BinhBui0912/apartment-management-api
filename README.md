@@ -17,8 +17,8 @@ A RESTful API for managing apartment complexes, built with **Spring Boot 3** and
 ### Run the Application
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd apartment-manager
+   git clone https://github.com/BinhBui0912/apartment-management-api.git
+   cd apartment-management-api
    ```
 
 2. **Start all services**
